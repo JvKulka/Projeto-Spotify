@@ -1,0 +1,1420 @@
+/* Layout
+----------------------------------------------------*/
+html, body, #home {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.fundo-inicial {
+	background: url(../imagens/capa.png),
+				url(../imagens/ruido.png), 
+				linear-gradient(60deg, #ff4169, #7c26f8);
+  	background-attachment: fixed;
+  	font-family: Helvetica,Arial,sans-serif;
+}
+
+/* Barra de navegação (index)
+----------------------------------------------------*/
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6);
+}
+.navbar-light .navbar-nav .nav-link { /*sobrescrever as formataçoes do boostrap */
+	color: white;
+	margin: 5px;
+	padding: 10px;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover { 
+	color: #1ed760;
+}
+
+.navbar-light .navbar-toggler { 
+	color: rgba(255, 255, 255, 0.5);
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 18px 20px;
+}
+
+
+/* Capa
+----------------------------------------------------*/
+.capa {
+	text-align: center;
+}
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	transition: background 0.4s, color 0.4s;
+	padding: 10px 20px;
+}
+
+.btn-roxo {
+	background: #7c25f8;
+}
+
+.btn-roxo:hover {
+	background: #6207e3;
+	color: black;
+}
+
+.btn-branco {
+	border: 2px solid white;
+}
+
+.btn-branco:hover {
+	background-color: white;
+	color: black;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+	padding: 0.1em;
+}
+
+/* Estrutura de Conteúdos
+----------------------------------------------------*/
+.caixa {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#servicos {
+	background: white;
+}
+
+#servicos h2 {
+	color: black;
+}
+
+#servicos h3 {
+	color: #7c26f8;
+}
+
+#recursos {
+	color: white;
+}
+
+#recursos h3 {
+	color: black;
+	opacity: 75%;
+}
+
+#recursos h2 {
+	color: black;
+}
+
+.albuns {
+	padding: 10px 0;
+}
+
+.rotacionar {
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+/* Rodapé
+----------------------------------------------------*/
+
+
+/* Tipografia
+----------------------------------------------------*/
+h1 {
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	color: white;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+	h1 {
+		font-size: 2.7em;
+	}
+
+	.btn-custom {
+		margin: 10px 15px;
+		font-size: 1em;
+	}
+
+	.logo-entrar {
+		width: 4.8em;
+	}
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	h1 {
+		font-size: 3em;
+	}
+
+	.btn-custom {
+		margin: 10px 15px;
+	}
+
+	.logo-entrar {
+		width: 6em;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	h1 {
+		font-size: 4.3em;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	h1 {
+		font-size: 5em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	h1 {
+		font-size: 6em;
+	}
+}
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------------
+	Barra de navegação (Entrar)
+----------------------------------------------------*/
+nav.navegacao {
+	background: white;
+	border: 1px solid rgb(217, 218, 220);
+}
+
+.container-login {
+	padding: 10px 0;
+	margin: auto;
+}
+
+/*-----------------------------------------------------------------
+	Texto (Entrar)
+----------------------------------------------------*/
+#texto {
+	text-align: center ;
+	margin: 20px 0px -15px 0px;
+	font-size: 13px;
+	font-weight: bolder;
+	letter-spacing: 0.5px;
+}
+
+.palavra {
+	text-transform: uppercase;
+	align-self: center;
+	font-size: 12.5px;
+	font-weight: bold;
+}
+
+.linha3 {
+	border-color: rgb(204, 204, 204);
+    border-width: 1px;
+  	box-sizing: border-box;
+  	width: 10%;
+  	margin-right: 15px;
+  	justify-content: center;
+}
+
+.linha4 {
+	border-color: rgb(204, 204, 204);
+    border-width: 1px;
+  	box-sizing: border-box;
+  	width: 10%;
+  	margin-left: 18px;
+  	justify-content: center;
+}
+
+.linha5 {
+	border-color: rgb(204, 204, 204);
+    border-width: 1px;
+  	box-sizing: border-box;
+  	width: 100%;
+  	justify-content: center;
+}
+
+/*-----------------------------------------------------------------
+	Botoes (Entrar)
+----------------------------------------------------*/
+.btn-custom2 {
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	font-size: 0.9em;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 5px 0;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-facebook {
+	background: #3b5998;
+	color: white;
+	padding: 12px 85px;
+	letter-spacing: 1.7px;
+}
+
+.btn-facebook:hover {
+	color: white;
+	border: 1px solid black;
+}
+
+.btn-aplle {
+	background: black;
+	color: white;
+	padding: 12px 105px;
+	letter-spacing: 1.7px;
+	border: 1px solid darkgray;
+}
+
+.btn-aplle:hover {
+	color: white;
+	border: 1px solid black;
+}
+
+.btn-google {
+	border: 1px solid gray;
+	color: gray;
+	padding: 12px 93px;
+	letter-spacing: 1.7px;
+}
+
+.btn-google:hover {
+	color: gray;
+	border: 1px solid black;
+}
+
+.btn-telefone {
+ 	border: 1px solid gray;
+ 	color: gray;
+ 	padding: 12px 36px;
+	letter-spacing: 1.7px;
+	margin-bottom: -5px;
+}
+
+.btn-telefone:hover {
+	color: gray;
+	border: 1px solid black;
+}
+
+#logos {
+	font-size: 18px;
+	padding-right: 5px;
+}
+
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-custom3 {
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	font-size: 0.9em;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 5px 0;
+}
+
+.btn-entrar {
+	background: #1ed760;
+	color: black;
+	padding: 12px 185px;
+	letter-spacing: 1.2px;
+	margin-top: 0px;
+}
+
+.btn-entrar:hover {
+	color: black;
+	transform: scale(1.03);
+}
+
+.btn-inscrever {
+	background: #ffff;
+	color: gray;
+	padding: 12px 120px;
+	letter-spacing: 1.2px;
+	margin-top: 15px;
+	border: 1px solid gray;
+}
+
+.btn-inscrever:hover {
+	color: gray;
+	border: 1px solid black;
+}
+
+
+/*-----------------------------------------------------------------
+	formularios
+----------------------------------------------------*/
+.form-group {
+	padding: 15px 20px;
+}
+
+
+.endereço-email {
+	margin-top: -15px;
+}
+
+.email {
+	padding: 13px 250px 13px 10px;
+}
+
+.email:hover {
+	border: 1px solid black;
+}
+
+.email::placeholder {
+	padding-right: 300px;
+}
+
+.senha {
+	padding: 13px 250px 13px 10px;
+	margin-bottom: 10px;
+}
+
+.senha:hover {
+	border: 1px solid black;
+}
+
+.esqueceu {
+	color: black;
+	text-decoration: none;
+}
+
+.esqueceu:hover {
+	color: black;
+}
+
+label.negrito {
+	font-weight: bolder;
+	font-size: 13px;
+	letter-spacing: 0.8px;
+}
+
+input {
+	display: block;
+	margin: 0px 0px 15px 0px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+
+.lembrar-login {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.checkbox {
+	display: inline;
+	margin-right: 8px;
+}
+
+.botao-entrar {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 5px;
+}
+
+.criar-conta {
+	margin-top: 0px;
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+	Barra de navegação (Increver)
+----------------------------------------------------*/
+
+nav.navegacao2 {
+	background: white;
+}
+
+
+/*-----------------------------------------------------------------
+	Texto (Increver)
+----------------------------------------------------*/
+
+#texto2 {
+	text-align: center ;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+#palavra {
+	text-transform: none;
+	align-self: center;
+	font-size: 15px;
+	letter-spacing: 3px;
+	color: gray;
+}
+
+label.negrito2 {
+	font-weight: bolder;
+	font-size: 14px;
+	letter-spacing: 0.8px;
+}
+
+.linha6 {
+	border-color: rgb(204, 204, 204);
+    border-width: 1px;
+  	box-sizing: border-box;
+  	width: 8%;
+  	margin-right: 15px;
+  	justify-content: center;
+}
+
+.linha7 {
+	border-color: rgb(204, 204, 204);
+    border-width: 1px;
+  	box-sizing: border-box;
+  	width: 8%;
+  	margin-left: 15px;
+  	justify-content: center;
+}
+
+/*-----------------------------------------------------------------
+	Botoes (Inscrever)
+----------------------------------------------------*/
+
+.btn-custom4 {
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	font-size: 1em;
+	font-weight: bolder;
+	text-transform: none;
+	margin: 5px 0;
+}
+
+#logos2 {
+	font-size: 21px;
+	padding: 2px 15px 2px 0px;
+}
+
+.btn-facebook2 {
+	background: #3b5998;
+	color: white;
+	padding: 10px 30px;
+	margin-bottom: 12px;
+}
+
+.btn-facebook2:hover {
+	background: #384F81;
+	color: white;
+	transform: scale(1.02);
+}
+
+.btn-google2 {
+	border: 2px solid dimgray;
+	color: dimgray;
+	padding: 10px 38px;
+	margin-bottom: -5px;
+}
+
+.btn-google2:hover {
+	color: dimgray;
+	transform: scale(1.02);
+}
+
+.btn-inscrever2 {
+	background: #1ed760;
+	color: black;
+	font-size: 15px;
+	padding: 16px 45px;
+	letter-spacing: 1.05px;
+	margin-top: -28px;
+	cursor: pointer;
+}
+
+.btn-inscrever2:hover {
+	background: #1ed760;
+	color: black;
+	font-size: 15px;
+	padding: 16px 45px;
+	letter-spacing: 1.05px;
+	margin-top: -28px;
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+
+/*-----------------------------------------------------------------
+	formularios (inscrever)
+----------------------------------------------------*/
+
+.email2 {
+	padding: 13px 210px 13px 10px;
+	margin-bottom: -2px;
+}
+
+.email2:hover {
+	border: 1px solid black;
+}
+
+.email2::placeholder {
+	padding-right: 3000px;
+}
+
+.link-telefone {
+	font-size: 14px;
+	color: #117a37;
+	text-decoration: underline;
+}
+
+.link-telefone:hover {
+	color: #117a37;
+}
+
+.endereço-email2 {
+	margin-top: 18px;
+	margin-bottom: 22px;
+}
+
+.criar-senha {
+	margin-bottom: 22px;
+}
+
+.aviso-nome {
+	font-size: 14px;
+} 
+
+.nome-perfil {
+	margin-bottom: 5px;
+}
+
+.dia {
+	padding: 12px 251px 12px 10px;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+.data-nascimento {
+	margin-top: 18px;
+}
+
+.genero {
+	margin-top: 28px;
+	margin-bottom: 10px;
+}
+
+.radio-genero {
+	transform: scale(1.3);
+ 	display: inline;
+	margin: -25px 14px 28px 19px;
+}
+
+.generos {
+	font-size: 14.2px;
+}
+
+.checkbox2 {
+	transform: scale(1.3);
+	display: inline;
+	margin-right: 13px;
+}
+
+.tamanho-confirmacoes {
+	font-size: 14.2px;
+	margin: 13px 5px;
+}
+
+.tamanho-confirmacoes2 {
+	font-size: 14.2px;
+	margin: 20px 5px;
+}
+
+.link-termos {
+	text-decoration: underline;
+	color: rgb(29, 185, 84);
+}
+
+.link-termos:hover {
+	color: rgb(29, 185, 84);
+}
+
+.mensagem-privacidade {
+	margin-top: -15px;
+	font-size: 12.5px;
+	text-align: center;
+}
+
+.espacamento {
+	margin-top: -10px;
+}
+
+.espacamento2 {
+	margin-top: -2px;
+}
+
+.espacamento3 {
+	margin-top: -18px;
+}
+
+.fazer-login {
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 125px;
+}
+
+
+/*------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+	Barra de navegação (suporte)
+----------------------------------------------------*/
+
+nav.navbar-preta {
+	padding: 12px 0px;
+	background: black;
+}
+
+.fundo-azul {
+	background: url(https://support.scdn.co/web/_next/static/assets/83dfe95/search-mobile.webp) top/100% no-repeat #052a56 ;
+}
+
+/*-----------------------------------------------------------------
+	Area azul (suporte)
+----------------------------------------------------*/
+
+.h1-suporte {
+	margin-top: 135px;
+	margin-bottom: 40px;
+	font-size: 65px;
+	font-weight: bolder;
+}
+
+.barra-buscar {
+	padding: 13px 565px 13px 10px;
+	margin: auto;
+}
+
+.titulos-suporte {
+	margin-top: 30px;
+	margin-bottom: 15px;
+	font-size: 12px;
+	color: #d9d9d9;
+	font-weight: normal;
+	letter-spacing: 1.2px;
+}
+
+.links-suporte {
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.links-suporte:hover {
+	text-decoration: underline;
+	color: white;
+	cursor: pointer;
+}
+
+/*-----------------------------------------------------------------
+	Links (suporte)
+----------------------------------------------------*/
+
+.titulos-links-suporte {
+	color: black;
+	font-size: 23px;
+	margin: 25px 0px 20px 50px;
+	font-weight: 700;
+}
+
+.titulos-link-suporte3 {
+	color: black;
+	font-size: 23px;
+	margin: 25px 0px 20px 50px;
+	font-weight: 700;
+	cursor: text;
+	text-decoration: none;
+}
+
+.links-suporte2 {
+	color: #117a37;
+	font-size: 17px;
+	font-weight: bolder;
+	margin-top: 2px;
+}
+
+.links-suporte2:hover {
+	color: #117a37;
+	font-size: 17px;
+	font-weight: bolder;
+	margin-top: 2px;
+	text-decoration: underline;
+}
+
+.espacamento-paragrafo {
+	margin-bottom: 9px;
+}
+
+.area-links-suporte {
+	padding: 0px 50px;
+}
+
+/*-----------------------------------------------------------------
+	Visite Comunidade (suporte)
+----------------------------------------------------*/
+
+.visite-comunidade {
+	text-align: center;
+}
+
+.titulo-comunidade {
+	color: black;
+	margin-top: 100px;
+	margin-bottom: 25px;
+}
+
+.texto-comunidade {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.btn-comunidade {
+	background: #1ed760;
+	color: black;
+	font-size: 14px;
+	padding: 13px 32px;
+	margin-top: 10px;
+	margin-bottom: 80px;
+	cursor: pointer;
+}
+
+.btn-comunidade:hover {
+	background: #1ed760;
+	color: black;
+	font-size: 14px;
+	padding: 13px 32px;
+	margin-top: 10px;
+	margin-bottom: 80px;
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+/*-----------------------------------------------------------------
+	Footer (suporte)
+----------------------------------------------------*/
+
+footer {
+	background: #000;
+	padding: 100px 0px 180px 0px;
+	position: relative;
+}
+
+.titulo-footer {
+	color: #919496;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	font-weight: bolder;
+	letter-spacing: 1px;
+}
+
+footer .link-footer a{
+	color: white;
+	font-size: 15px;
+}
+
+
+footer .link-footer a:hover {
+	color: #1ed760;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	margin: 0 5px;
+	padding-top: 14px;
+}
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+	Area verde (baixar) 
+----------------------------------------------------*/
+
+.area-verde {
+	background-color: rgb(25, 230, 140);
+	padding: 40px 15px 104px;
+}
+
+.imagem-computador {
+	text-align: center;
+	margin-top: 150px;
+}
+
+.img-pc {
+	width: 135px;
+}
+
+.img-circulo {
+	position: absolute;
+	width: 35px;
+	margin-left: -87px;
+	margin-top: 20px;
+}
+
+.img-certo {
+	position: absolute;
+	width: 11.5px;
+	margin-left: -76px;
+	margin-top: 33px;
+}
+
+.titulo-baixar {
+	text-align: center;
+	color: black;
+	font-size: 48px;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	font-weight: 700;
+}
+
+.texto-baixar {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+/*-----------------------------------------------------------------
+	Botoes (baixar)
+----------------------------------------------------*/
+
+.btn-custom5 {
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	font-size: 0.9em;
+	font-weight: bolder;
+	margin: 5px 0;
+}
+
+.botao-baixar {
+	margin-top: 0px;
+	margin-bottom: -8px;
+	padding: 5px;
+}
+
+.btn-baixar {
+	background: white;
+	color: black;
+	padding: 12px 30px;
+	margin-top: 20px;
+}
+
+.btn-baixar:hover {
+	color: black;
+	transform: scale(1.03);
+}
+
+/*-----------------------------------------------------------------
+	Area branca (baixar) 
+----------------------------------------------------*/
+
+.titulo-area-branca {
+	text-align: center;
+	margin-top: 65px;
+	margin-bottom: 25px;
+	color: black;
+	font-size: 33px;
+	font-weight: 700;
+}
+
+.texto-area-branca {
+	text-align: center;
+	font-weight: 400;
+}
+
+.baixar-google {
+	height: 57px;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.botoes-baixar {
+	text-align: center;
+	margin-bottom: 72px;
+	padding: 5px;
+}
+
+/*-----------------------------------------------------------------
+	Area cinza (baixar) 
+----------------------------------------------------*/
+
+.area-cinza {
+	background-color: rgb(34, 35, 38);
+}
+
+.imagem-area-cinza {
+	text-align: center;
+	margin-top: 70px;
+}
+
+.img-area-cinza {
+	height: 172px;
+}
+
+.texto-area-cinza {
+	text-align: center;
+	font-size: 33px;
+	margin-top: 25px;
+	margin-bottom: 37px;
+	font-weight: 700;
+}
+
+.links-area-cinza {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.link-cinza {
+	color: rgb(29, 185, 84);
+	padding: 10px;
+	text-decoration: underline;
+	font-size: 16px;
+	margin: 0px 6px 0px 6px;
+	letter-spacing: 0.5px;
+}
+
+.link-cinza:hover {
+	color: #1ed760;
+}
+
+
+
+
+/*------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------
+	Area azul (premium) 
+----------------------------------------------------*/
+
+.area-azul {
+	background-color: rgb(29, 117, 222);
+	padding: 40px 15px 104px;
+}
+
+.textos-area-azul {
+	margin-top: 35px;
+}
+
+.titulo-area-azul {
+	font-size: 38px;
+	letter-spacing: 0.1px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.texto-area-azul {
+	font-size: 24px;
+	color: white;
+	font-weight: 400;
+}
+
+.termos-area-azul {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.link-termos-area-azul {
+	color: white;
+	text-decoration: underline;
+	font-size: 10.5px;
+	font-weight: 500;
+	letter-spacing: 0.2px;
+	font-family: var(--font-family,spotify-circular),Helvetica,Arial,sans-serif;
+}
+
+.link-termos-area-azul:hover {
+	color: white;
+}
+
+.texto-termos-area-azul {
+	color: white;
+	font-size: 10.5px;
+	margin-bottom: -65px;
+	letter-spacing: 0.2px;
+	font-family: var(--font-family,spotify-circular),Helvetica,Arial,sans-serif;
+}
+
+/*-----------------------------------------------------------------
+	Botoes (premium)
+----------------------------------------------------*/
+
+.btn-custom6 {
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	font-size: 0.9em;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 5px 0;
+}
+
+.btn-comecar {
+	background: black;
+	color: white;
+	padding: 14px 34px;
+	margin-top: 0px;
+	margin-right: 5px;
+	align-self: start;
+}
+
+.btn-comecar:hover {
+	color: white;
+	transform: scale(1.03);
+}
+
+.btn-planos {
+	color: white;
+	border: 2px solid white;
+	padding: 13px 32px;
+	margin-top: 0px;
+	align-self: start;
+}
+
+.btn-planos:hover {
+	color: white;
+	transform: scale(1.03);
+}
+
+
+/*-----------------------------------------------------------------
+	Area pergunta (premium) 
+----------------------------------------------------*/
+.cor-fundo {
+	background-color: #efefef;
+}
+
+.titulo-area-pergunta {
+	color: black;
+	font-size: 42px;
+	text-align: center;
+	font-weight: 700;
+	margin-top: 70px;
+	margin-bottom: 80px;
+}
+.img-area-branca {
+	width: 142px;
+}
+
+.ul-area-branca {
+	justify-content: center
+}
+
+.li-area-branca1 {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px 50px;
+	margin: 0px -15px 0px 20px;
+}
+
+.li-area-branca2 {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px 50px;
+	margin: 0px 0px 0px 30px;
+}
+
+.li-area-branca3 {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px 50px;
+	margin: 0px -0px 0px 0px;
+}
+
+.li-area-branca4 {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px 50px;
+	margin: 0px 0px 110px -30px;
+}
+
+.titulo-img {
+	margin-top: 30px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.texto-img {
+	font-size: 16px;
+	margin-top: -10px;
+	font-weight: 400;
+}
+
+/*-----------------------------------------------------------------
+	Area planos (premium) 
+----------------------------------------------------*/
+
+
+.textos-plano {
+	text-align: center;
+	color: black;
+	margin-top: 70px;
+}
+
+.titulo-plano {
+	font-size: 38px;
+}
+
+.ul-cartoes {
+	justify-content: center;
+}
+
+.li-cartoes {
+	list-style-type: none;
+	text-align: center;
+	padding: 5px;
+}
+	
+.img-elo {
+	width: 29px;
+}
+
+.img-hipercard {
+	width: 29px;
+}
+
+.outros-11 {
+	text-decoration: underline;
+	margin-top: 5px;
+}
+
+/*-----------------------------------------------------------------
+	cartoes planos (premium) 
+----------------------------------------------------*/
+
+.planos {
+	height: 780px;
+	width: 270px;
+	border: 2px solid lightgray;
+	border-radius: 11px;
+	margin: 0px -7px;
+	background-color: white;
+}
+
+.centralizar {
+	justify-content: center;
+	margin-top: 45px;
+	margin-bottom: 120px;
+}
+
+.back-azul {
+	background-color: rgb(13, 114, 234);
+	color: white;
+	font-weight: 700;
+	font-size: 14px;
+	width: 165px;
+	height: 26px;
+	border-radius: 4px;
+	margin-top: 18px;
+	margin-left: 15px;
+	padding: 1px;
+	text-align: center;
+}
+
+.borda-azul {
+	border: 1px solid rgb(13, 114, 234);
+	color: rgb(13, 114, 234);
+	font-weight: 700;
+	font-size: 14px;
+	width: 205px;
+	height: 28px;
+	border-radius: 4px;
+	margin-top: -5px;
+	margin-left: 15px;
+	padding: 1px;
+	text-align: center;
+}
+
+.nome-planos {
+	color: black;
+	font-size: 24px;
+	margin-left: 15px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	margin-top: -10px;
+	margin-bottom: 0px;
+}
+
+.p-planos {
+	margin-left: 15px;
+	margin-top: 2px;
+	font-size: 16px;
+	margin-bottom: 0px;
+	font-weight: 400;
+}
+
+.linha {
+    border-color: rgb(204, 204, 204);
+    border-style: inset;
+    border-width: 1px;
+  	box-sizing: border-box;
+  	width: 90%;
+  	align-self: center;
+  	margin-top: 20px;
+}
+
+.linha2 {
+    border-color: rgb(204, 204, 204);
+    border-style: inset;
+    border-width: 1px;
+  	box-sizing: border-box;
+  	width: 90%;
+  	align-self: center;
+  	margin-top: 59px;
+}
+
+.ul-planos {
+	font-family: sans-serif;
+	font-size: 15.5px;
+	margin-right: 12px;
+	font-weight: 400;
+}
+
+.li-planos {
+	margin-top: 5px;
+	line-height: 23px;
+}
+
+/*-----------------------------------------------------------------
+	botoes planos (premium) 
+----------------------------------------------------*/
+
+.btn-custom7 {
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	font-size: 1em;
+	font-weight: bolder;
+	text-transform: uppercase;
+	margin: 5px 0;
+}
+
+.btn-comecar-premium {
+	background: black;
+	color: white;
+	font-size: 14px;
+	padding: 13px 80px;
+	cursor: pointer;
+}
+
+.btn-comecar-premium:hover {
+	color: white;
+	transform: scale(1.05);
+}
+
+.margin-btn1 {
+	margin-top: 146px;
+}
+
+.margin-btn2 {
+	margin-top: 175px;
+}
+
+.margin-btn3 {
+	margin-top: 28px;
+}
+
+.margin-btn4 {
+	margin-top: 125px;
+}
+
+.p-termos {
+	font-size: 12px;
+	font-weight: 400;
+	margin: 12px 15px 15px 15px;
+	line-height: 16px;
+}
+
+.a-termos {
+	text-decoration: underline;
+	color: black;
+}
+
+.a-termos:hover {
+	color: black;
+}
